@@ -1,3 +1,17 @@
+<!--
+  IMAGE NOTE: This page loads the profile photo from a relative path
+  ("author.jpg") and the social-preview image from a relative path too
+  ("cover.jpg", referenced in the og:image / twitter:image meta tags above).
+  Both will 404 on GitHub Pages unless the actual image files are committed
+  to the SAME folder as this HTML file in the repo (e.g. the root of
+  the-human-mind repo, right next to index.html), named EXACTLY:
+    - author.jpg   (used for both the hero portrait and the About photo)
+    - cover.jpg    (1200x630px, used only for link-preview cards on
+                    LinkedIn/Twitter/etc. — not visible on the page itself)
+  Until those files are uploaded, the two <img> tags below now fall back
+  automatically to a styled "AB" placeholder instead of a broken-image
+  icon, so the page never looks broken to visitors.
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -264,7 +278,8 @@
       </div>
     </div>
     <div class="portrait">
-      <img src="author.jpg" alt="Ashwik Bire, author">
+      <img src="author.jpg" alt="Ashwik Bire, author" loading="eager"
+           onerror="this.onerror=null;this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNDAwIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMUIyQTZCIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzExMWM0YSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9InVybCgjZykiLz4KICA8dGV4dCB4PSIyMDAiIHk9IjIzNSIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsICdUaW1lcyBOZXcgUm9tYW4nLCBzZXJpZiIgZm9udC1zaXplPSIxNDAiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNDOUE4NEMiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkFCPC90ZXh0Pgo8L3N2Zz4=';">
       <p class="cap">Ashwik Bire, Data Scientist, Stroke Survivor, Author</p>
     </div>
   </div>
@@ -328,7 +343,8 @@
 <section class="about">
   <div class="wrap">
     <div class="about-photo">
-      <img src="author.jpg" alt="Ashwik Bire">
+      <img src="author.jpg" alt="Ashwik Bire" loading="lazy"
+           onerror="this.onerror=null;this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNDAwIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMUIyQTZCIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzExMWM0YSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9InVybCgjZykiLz4KICA8dGV4dCB4PSIyMDAiIHk9IjIzNSIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsICdUaW1lcyBOZXcgUm9tYW4nLCBzZXJpZiIgZm9udC1zaXplPSIxNDAiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNDOUE4NEMiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkFCPC90ZXh0Pgo8L3N2Zz4=';">
     </div>
     <div>
       <h2 class="section-title">About the author</h2>
