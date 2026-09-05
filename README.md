@@ -1,6 +1,6 @@
 # The Human Mind: Landing Page
 
-Live site: https://ashwikbire.github.io/My-Portfolio/the-human-mind-landing-page.html
+Live site: https://ashwikbire.github.io/The-Human-Mind/
 
 This is the landing page for **The Human Mind: A Data Scientist's Guide to Psychology**, a memoir by Ashwik Bire about surviving a posterior circulation stroke at twenty-four and the recovery that followed.
 
